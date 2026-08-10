@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-from utils.metrics.metric_util import reorder_image, to_y_channel
+from src.utils.metrics.metric_util import reorder_image, to_y_channel
 from skimage.metrics import structural_similarity
 import torch
 

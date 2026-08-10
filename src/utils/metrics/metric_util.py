@@ -1,6 +1,6 @@
 import numpy as np
 
-from utils.metrics.matlab_functions import bgr2ycbcr
+from src.utils.metrics.matlab_functions import bgr2ycbcr
 
 
 def reorder_image(img, input_order='HWC'):
