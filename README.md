@@ -68,7 +68,10 @@ Our trained weights are coming soon.
 - In `deblur_predict.py` and `deblur_predict_ddp.py`, set the correct **path to the trained weights**.
 - Also set the **dataset paths** before running.
 
-## Results
+## Deblurred Results
+[MIMO-UNet](<https://drive.google.com/file/d/1iP9hRE6SEUTzd8hormoGnUwWDCqNpoaq/view?usp=sharing>), [Stripformer](<https://drive.google.com/file/d/1f5qGy3iTv25sGT8s712LBecumMNIs3Yv/view?usp=sharing>), [FFTformer](<https://drive.google.com/file/d/1b7TWCo1Gr4NtBKxUOOQloFCXMiy2ptY7/view?usp=sharing>), [LoFormer](<https://drive.google.com/file/d/1iXg0SYYoZ1Z7GVbL-aHeeAIKisZO0jbD/view?usp=sharing>)
+
+## Quantitative Results
 ![Results](assets/BlurDM_results.png)
 
 
@@ -76,9 +79,12 @@ Our trained weights are coming soon.
 The utils is is built upon [BasicSR](<https://github.com/XPixelGroup/BasicSR>).
 ## Citation
 ```
-@inproceedings{heblurdm,
-  title={BlurDM: A Blur Diffusion Model for Image Deblurring},
+@article{he2026blurdm,
+  title={Blurdm: A blur diffusion model for image deblurring},
   author={He, Jin-Ting and Tsai, Fu-Jen and Peng, Yan-Tsung and Chen, Min-Hung and Lin, Chia-Wen and Lin, Yen-Yu},
-  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems}
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
+  pages={52196--52227},
+  year={2026}
 }
 ```
