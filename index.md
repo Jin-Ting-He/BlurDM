@@ -5,7 +5,7 @@ Diffusion models show promise for dynamic scene deblurring; however, existing st
 
 ## Results
 ![Vizs](assets/BlurDM_viz.png)
-We provide qualitative comparisons of four baselines and their BlurDM-enhanced versions on the GoPro and HIDE test sets in this figure. The results show that BlurDM consistently produces sharper and more visually appealing deblurred results than "Baseline."
+We provide qualitative comparisons of four baselines and their BlurDM-enhanced versions on the GoPro and HIDE test sets in this figure. The results show that BlurDM consistently produces sharper and more visually appealing deblurred results than "Baseline." The deblurred results of each BlurDM-enhanced backbone on each dataset can be download from [MIMO-UNet](<https://drive.google.com/file/d/1iP9hRE6SEUTzd8hormoGnUwWDCqNpoaq/view?usp=sharing>), [Stripformer](<https://drive.google.com/file/d/1f5qGy3iTv25sGT8s712LBecumMNIs3Yv/view?usp=sharing>), [FFTformer](<https://drive.google.com/file/d/1b7TWCo1Gr4NtBKxUOOQloFCXMiy2ptY7/view?usp=sharing>), [LoFormer](<https://drive.google.com/file/d/1iXg0SYYoZ1Z7GVbL-aHeeAIKisZO0jbD/view?usp=sharing>).
 ![Results](assets/BlurDM_result.png)
 We compare the deblurring performance of four baselines and their BlurDM-enhanced versions, where “Baseline” and “BlurDM” refer to the deblurring performance without and with BlurDM, respectively. The results indicate that BlurDM consistently and significantly enhances deblurring performance.
 
@@ -18,9 +18,12 @@ We use BlurDM as a prior generation network to retain the diffusion model’s ab
 
 ## Citation
 ```
-@inproceedings{heblurdm,
-  title={BlurDM: A Blur Diffusion Model for Image Deblurring},
+@article{he2026blurdm,
+  title={Blurdm: A blur diffusion model for image deblurring},
   author={He, Jin-Ting and Tsai, Fu-Jen and Peng, Yan-Tsung and Chen, Min-Hung and Lin, Chia-Wen and Lin, Yen-Yu},
-  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems}
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
+  pages={52196--52227},
+  year={2026}
 }
 ```
