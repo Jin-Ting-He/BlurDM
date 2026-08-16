@@ -13,7 +13,7 @@ import lpips
 import numpy as np
 from PIL import Image
 from skimage.metrics import peak_signal_noise_ratio as psnr
-from utils.metrics.psnr_ssim import calculate_ssim, calculate_psnr
+from src.utils.metrics.psnr_ssim import calculate_ssim, calculate_psnr
 from torchvision import transforms
 transform = transforms.Compose([
     transforms.Resize((256, 256)),  
@@ -26,7 +26,7 @@ lpips_model = lpips.LPIPS(net='alex').cuda()  # 'alex', 'vgg', or 'squeeze'
 lpips_model.eval()
 
 folder1 = '/home/jthe/DeblurDM/dataset/test/GoPro/target'
-folder2 = '/home/jthe/BlurDM/results/MIMO_UNet/GoPro/GoPro'
+folder2 = '/home/jthe/BlurDM/results/FFTformer/GoPro/results/GoPro'
 
 files1 = set(os.listdir(folder1))
 files2 = set(os.listdir(folder2))
